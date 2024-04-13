@@ -35,7 +35,7 @@ Description=Avail Node
 
 [Service]
 Type=simple
-ExecStart=/root/avail/avail-node --chain turing --name coha05 --validator -d /avail/node-data
+ExecStart=/root/avail/avail-node --chain turing --name {your-name-here} --validator -d /avail/node-data
 Restart=always
 RestartSec=3
 StandardOutput=syslog
