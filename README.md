@@ -68,3 +68,50 @@ or
 ```
 journalctl -u avail.service
 ```
+---
+## How to connect your node and get into waiting list
+
+
+### Bond Your Funds
+
+1. Start staking on the Staking page: https://temp-explorer.avail.so/#/staking/actions.
+2. Click the `Stash` button to begin bonding.
+![Stash](./Stake-step1.png) 
+3. Enter your bonding preferences in the form. Then click `Bond` and `Sign and Submit`
+![Bond](Bond-step-1.png)
+
+**You need at least 100,000 AVL to join waiting list.**
+
+### Get your Session Keys
+
+Run the following command on your node:
+```
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9944
+```
+
+Example result:
+![Result](result-key.PNG)
+
+### Submit Session Keys
+
+1. Go to [Staking Tab](https://goldberg.avail.tools/#/staking/actions) again
+2. Click on Set `Session Key` and enter the hex-encoded result.
+3. Click Set `Session Key` and enter your password when prompted.
+![Enter-key](set-session-keys.png)
+
+### Register as a Validator
+
+1. Click `Validate` on the Staking tab.
+![Validate](start-validating.png)
+2. Set your validator commission percentage.
+3. Enter your password and click `Validate`.
+![Validate](set-validate-commission.png)
+
+
+### Congrats you've made it done
+
+ Check your validator status `Waiting` or `Active` on the `Staking` page [here](https://temp-explorer.avail.so/#/staking)
+
+ ![node-status](check-node-status.png)
+
+ ---
