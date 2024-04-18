@@ -12,7 +12,7 @@ cd avail
 ```
 ### Download the binary
 ```
-wget https://github.com/availproject/avail/releases/download/v2.0.0.0-rc4/x86_64-ubuntu-2204-avail-node.tar.gz -P avail
+wget https://github.com/availproject/avail/releases/download/v2.1.0.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz -P avail
 ```
 
 ### Extract the binary
