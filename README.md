@@ -12,12 +12,12 @@ cd avail
 ```
 ### Download the binary
 ```
-wget https://github.com/availproject/avail/releases/download/v2.1.0.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz -P avail
+wget https://github.com/availproject/avail/releases/download/v2.2.0.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz
 ```
 
 ### Extract the binary
 ```
-tar -xf /root/avail/x86_64-ubuntu-2204-avail-node.tar.gz -C avail
+tar -xf /root/avail/x86_64-ubuntu-2204-avail-node.tar.gz 
 ```
 
 ### Create a directory for node data
