@@ -69,6 +69,30 @@ or
 journalctl -u avail.service
 ```
 ---
+
+## How to upgrade node
+
+### Go to avail folder and remove the avail node file
+
+```
+cd avail
+rm -rf avail-node
+rm -rf x86_64-ubuntu-2204-avail-node.tar.gz
+```
+### Download new version and unzip
+
+```
+wget https://github.com/availproject/avail/releases/download/v2.2.0.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz
+tar xvzf x86_64-ubuntu-2204-avail-node.tar.gz
+```
+
+### Restart your node
+
+```
+sudo systemctl restart avail.service
+journalctl -f -u avail.service
+```
+---
 ## How to connect your node and get into waiting list
 
 
