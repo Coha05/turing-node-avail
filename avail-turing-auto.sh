@@ -10,8 +10,11 @@ sudo apt update && sudo apt upgrade -y
 mkdir -p ~/avail
 cd ~/avail
 
-# Download the binary
-wget https://github.com/availproject/avail/releases/download/v2.2.0.0-rc1/x86_64-ubuntu-2204-avail-node.tar.gz
+# Fetch the latest release URL from GitHub API
+LATEST_URL=$(curl -s https://api.github.com/repos/availproject/avail/releases/latest | grep browser_download_url | grep x86_64-ubuntu-2204-avail-node.tar.gz | cut -d '"' -f 4)
+
+# Download the latest release
+wget $LATEST_URL
 
 # Extract the binary
 tar -xf x86_64-ubuntu-2204-avail-node.tar.gz 
