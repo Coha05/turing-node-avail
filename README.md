@@ -2,8 +2,8 @@
 ## Guide how to install Turing Avail Node using systemctl
 
 ## Auto Install
-
-```source <(curl -s https://raw.githubusercontent.com/Coha05/turing-node-avail/main/avail-turing-auto.sh)
+```
+source <(curl -s https://raw.githubusercontent.com/Coha05/turing-node-avail/main/avail-turing-auto.sh)
 ```
 ### Update apt & install package dependencies
 ```
