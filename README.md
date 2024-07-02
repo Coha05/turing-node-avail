@@ -62,7 +62,7 @@ systemctl enable avail
 ```
 ### Check the status of the Avail Node service
 ```
-systemctl status avail-node
+systemctl status avail
 ```
 Check log: 
 ```
