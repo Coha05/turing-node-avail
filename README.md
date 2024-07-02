@@ -57,8 +57,8 @@ In nano, you can do this by pressing Ctrl + X, then Y to confirm, and finally En
 ### Reload systemctl and Start the Avail Node service:
 ```
 systemctl daemon-reload
-systemctl start avail-node
-systemctl enable avail-node
+systemctl start avail
+systemctl enable avail
 ```
 ### Check the status of the Avail Node service
 ```
