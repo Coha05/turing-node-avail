@@ -30,7 +30,7 @@ mkdir node-data
 ```
 ### Create the service unit file
 ```
-nano /etc/systemd/system/avail.service
+sudo nano /etc/systemd/system/avail.service
 ```
 ### Add the following content to the avail-turing.service file
 ```
@@ -56,21 +56,17 @@ In nano, you can do this by pressing Ctrl + X, then Y to confirm, and finally En
 
 ### Reload systemctl and Start the Avail Node service:
 ```
-systemctl daemon-reload
-systemctl start avail
-systemctl enable avail
+sudo systemctl daemon-reload
+sudo systemctl start avail
+sudo systemctl enable avail
 ```
 ### Check the status of the Avail Node service
 ```
-systemctl status avail
+sudo systemctl status avail
 ```
 Check log: 
 ```
-journalctl -u avail.service
-```
-or
-```
-journalctl -u avail.service
+sudo journalctl -u avail.service
 ```
 ---
 
@@ -103,7 +99,7 @@ rm x86_64-ubuntu-2204-avail-node.tar.gz
 
 ```
 sudo systemctl restart avail.service
-journalctl -f -u avail.service
+sudo journalctl -f -u avail.service
 ```
 ---
 ## How to connect your node and get into waiting list
